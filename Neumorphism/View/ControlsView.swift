@@ -28,13 +28,10 @@ struct ControlsView: View {
                 HStack {
                     CircleButton(color: tintColor, icon: "◀︎◀︎")
                         .frame(width: buttonSize.width, height: buttonSize.height)
-                        .neumorphic()
                     CircleButton(color: tintColor, icon: "▶︎")
                         .frame(width: buttonSize.width, height: buttonSize.height)
-                        .neumorphic()
                     CircleButton(color: tintColor, icon: "▶︎▶︎")
                         .frame(width: buttonSize.width, height: buttonSize.height)
-                        .neumorphic()
                 }
                 
             }

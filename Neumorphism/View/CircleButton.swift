@@ -20,6 +20,7 @@ struct CircleButton: View {
                 .foregroundColor(Color.black.opacity(0.25))
                 .font(.system(size: fontSize()))
         }
+        .neumorphic()
     }
     
     private func fontSize() -> CGFloat {
