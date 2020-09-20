@@ -17,7 +17,7 @@ struct ControlsView: View {
             Rectangle()
                 .fill(tintColor)
                 .cornerRadius(20)
-                .neuomorphic()
+                .neumorphic()
             VStack(spacing: 25) {
                 Text("Liar - Garland Noose")
                     .font(.system(size: 23))
@@ -28,13 +28,13 @@ struct ControlsView: View {
                 HStack {
                     CircleButton(color: tintColor, icon: "◀︎◀︎")
                         .frame(width: buttonSize.width, height: buttonSize.height)
-                        .neuomorphic()
+                        .neumorphic()
                     CircleButton(color: tintColor, icon: "▶︎")
                         .frame(width: buttonSize.width, height: buttonSize.height)
-                        .neuomorphic()
+                        .neumorphic()
                     CircleButton(color: tintColor, icon: "▶︎▶︎")
                         .frame(width: buttonSize.width, height: buttonSize.height)
-                        .neuomorphic()
+                        .neumorphic()
                 }
                 
             }

@@ -8,17 +8,18 @@
 import SwiftUI
 
 extension View {
-    func neuomorphic() -> some View {
-        modifier(Neuromorphic())
+    func neumorphic() -> some View {
+        modifier(Neumorphic())
     }
 }
 
-fileprivate struct Neuromorphic: ViewModifier {
+fileprivate struct Neumorphic: ViewModifier {
+    
+    let shadowOffset: CGFloat = 7
+    let shadowLightColor = Color.white.opacity(0.4)
+    let shadowDarkColor = Color.black.opacity(0.15)
     
     func body(content: Content) -> some View {
-        let shadowOffset: CGFloat = 7
-        let shadowLightColor = Color.white.opacity(0.4)
-        let shadowDarkColor = Color.black.opacity(0.15)
         return content
             .shadow(color: shadowLightColor,
                     radius: shadowOffset,
