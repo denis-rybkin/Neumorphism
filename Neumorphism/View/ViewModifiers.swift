@@ -8,12 +8,12 @@
 import SwiftUI
 
 extension View {
-    func neiromorphic() -> some View {
-        modifier(Neiromorphic())
+    func neuomorphic() -> some View {
+        modifier(Neuromorphic())
     }
 }
 
-fileprivate struct Neiromorphic: ViewModifier {
+fileprivate struct Neuromorphic: ViewModifier {
     
     func body(content: Content) -> some View {
         let shadowOffset: CGFloat = 7
